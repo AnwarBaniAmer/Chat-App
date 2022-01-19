@@ -10,6 +10,7 @@ import com.legend.techtask.adapter.UsersAdapter
 import com.legend.techtask.database.ConversationDatabase
 import com.legend.techtask.databinding.FragmentUserBinding
 import com.legend.techtask.repository.UsersRepository
+import com.legend.techtask.utils.Utils
 import com.legend.techtask.viewModel.viewModelProviderFactory.UserViewModelProviderFactory
 import com.legend.techtask.viewModel.UsersViewModel
 
@@ -48,6 +49,7 @@ class UserFragment : Fragment() {
     }
 
     private fun setUpView() {
+        Utils.hideSoftKeyboard(activity as HomeActivity)
         usersAdapter = UsersAdapter()
         binding.rvUsers.apply {
             adapter = usersAdapter
