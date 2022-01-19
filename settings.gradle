@@ -1,0 +1,2 @@
+rootProject.name = "Legend Tech Task"
+include ':app'
