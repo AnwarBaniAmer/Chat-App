@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_view_radius">8dp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="radius">8dp</dimen>
+
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="ic_delete">50dp</dimen>
+    <dimen name="fab_size">40dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="messagesViewModel"
+            type="com.legend.techtask.viewModel.MessagesViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        tools:context=".views.MessagesFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_conversation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:scrollbarSize="4dip"
+            android:scrollbars="vertical"
+            app:layoutManager="LinearLayoutManager"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            app:layout_constraintBottom_toTopOf="@+id/typeMsgContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:reverseLayout="true"
+            app:stackFromEnd="false"
+            tools:listitem="@layout/row_message_sent" />
+
+        <ProgressBar
+            android:id="@+id/paginationProgressBar"
+            style="?attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="76dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="visible"
+            app:fabCustomSize="@dimen/fab_size"
+            android:tintMode="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/typeMsgContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+        <include
+            android:id="@+id/typeMsgContainer"
+            layout="@layout/type_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            bind:viewmodel="@{messagesViewModel}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
