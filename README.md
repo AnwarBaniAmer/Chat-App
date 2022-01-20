@@ -15,13 +15,13 @@ android Kotlin chat app shows a conversation (messages with attachments + users)
 - Lottie for animation
 
 Features:
--users are able to view a conversation between a set of users
--user can send a message
--users can delete a message
--users can Undo deleting a message
--users can show a list of conversation users with their last message
--offline app
--internet connection status
+- users are able to view a conversation between a set of users
+- user can send a message
+- users can delete a message
+- users can Undo deleting a message
+- users can show a list of conversation users with their last message
+- offline app
+- internet connection status
 
 <table>
   <tr>
