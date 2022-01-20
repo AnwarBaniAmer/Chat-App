@@ -23,6 +23,10 @@ Features:
 - offline app
 - internet connection status
 
+[![LegendTechTask ](screenshots/Capture.PNG)](https://www.youtube.com/watch?v=5O56KZe3iJU "LegendTechTask by Anwar Bani Amer")
+
+
+
 <table>
   <tr>
     <td><img src="screenshots/Screenshot_20220120-011903.jpg" width=400 height=800></td>
