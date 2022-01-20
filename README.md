@@ -25,11 +25,6 @@ Features:
 
 <table>
   <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
-     <td>Present day in purple and selected day in pink</td>
-  </tr>
-  <tr>
     <td><img src="screenshots/Screenshot_20220120-011903.jpg" width=400 height=800></td>
     <td><img src="screenshots/Screenshot_20220120-012847.jpg" width=400 height=800></td>
   </tr>
